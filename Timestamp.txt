@@ -1,0 +1,256 @@
+⭐ 14-Day LLM Bootcamp — LinkedIn Update Template
+
+Below is a ready-to-use template for each day, matching your exact timeline.
+
+📌 Day 1 — Data Preparation (Videos 1–5)
+
+Today’s Focus:
+Tokenization, sliding windows, and building dataloaders.
+
+What I did:
+
+Preprocessed raw text
+
+Converted text → token IDs
+
+Created input/target pairs using PyTorch DataLoader
+
+Win: Finally seeing batches of token IDs come out cleanly.
+Struggle: Off-by-one sequence alignment… my new enemy.
+
+Tomorrow: Embeddings + positional encoding.
+Let’s go. 🚀
+
+📌 Day 2 — Embeddings & Positional Encoding (Videos 6–9)
+
+Today’s Focus:
+Mapping token IDs to vectors + encoding order.
+
+What I did:
+
+Implemented token + positional embeddings
+
+Understood why order changes meaning
+
+Visualized embedding shapes
+
+Win: Everything runs without shape mismatches.
+Struggle: Getting sinusoidal PE right.
+
+Next: Self-attention — the beast begins tomorrow.
+
+📌 Day 3 — Attention Mechanism Part 1 (Videos 10–13)
+
+Today’s Focus:
+Self-Attention, Q/K/V, and attention scores.
+
+What I did:
+
+Implemented Query, Key, Value projections
+
+Calculated attention weights
+
+Understood why attention “focuses”
+
+Win: Attention matrix working!
+Struggle: Normalizing attention correctly.
+
+Next: Multi-head attention + masking.
+
+📌 Day 4 — Attention Mechanism Part 2 (Videos 14–17)
+
+Today’s Focus:
+Causal masking + Multi-Head Attention.
+
+What I did:
+
+Implemented causal mask (no peeking at future tokens)
+
+Built MultiHeadAttention class
+
+Verified output shapes
+
+Win: Multi-head attention doesn’t explode.
+Struggle: That masking logic is brutal.
+
+Next: Transformer block assembly.
+
+📌 Day 5 — Building the Transformer Block (Videos 18–21)
+
+Today’s Focus:
+LayerNorm + FeedForward + residuals.
+
+What I did:
+
+Implemented TransformerBlock
+
+Added GELU + linear layers
+
+Connected attention + FFN with skip connections
+
+Win: Everything runs end-to-end.
+Struggle: Keeping track of so many tensors.
+
+Next: Build the full GPT.
+
+📌 Day 6 — The Full GPT Model (Videos 22–25)
+
+Today’s Focus:
+Assembling the full model.
+
+What I did:
+
+Combined blocks → GPTModel
+
+Added final layer
+
+Generated first “random” outputs
+
+Win: Model runs without crashing!
+Struggle: Debugged residual paths for hours.
+
+Next: Debug buffer day.
+
+📌 Day 7 — Buffer / Debugging Day
+
+Today’s Focus:
+Fix shapes, test everything, sanity-check math.
+
+What I did:
+
+Cleaned up functions
+
+Added assertions + tests
+
+Refactored critical sections
+
+Win: Clean architecture, clean mind.
+Struggle: Tensor shapes… always tensor shapes.
+
+Next: Start training!
+
+📌 Day 8 — Pretraining Loop (Videos 26–29)
+
+Today’s Focus:
+Training step + loss function + backprop.
+
+What I did:
+
+Wrote training function
+
+Implemented CrossEntropy loss
+
+Ran first forward/backward pass
+
+Win: Loss decreases!
+Struggle: GPU memory tantrums.
+
+Next: Text generation sampling.
+
+📌 Day 9 — Text Generation Strategies (Videos 30–32)
+
+Today’s Focus:
+Temperature, top-k, top-p sampling.
+
+What I did:
+
+Wrote sampling function
+
+Compared strategies
+
+Generated first coherent-ish text
+
+Win: Model actually produces words!
+Struggle: Sampling hyperparameters.
+
+Next: Load GPT-2 weights.
+
+📌 Day 10 — Loading Pretrained Weights (Videos 33–35)
+
+Today’s Focus:
+Bring the GPT-2 brain into my GPT architecture.
+
+What I did:
+
+Mapped imported weights
+
+Validated layer-by-layer shapes
+
+Generated first GPT-2–level output
+
+Win: Huge jump in quality.
+Struggle: Matching exact layer names.
+
+Next: Fine-tuning classification.
+
+📌 Day 11 — Fine-Tuning for Classification (Videos 36–38)
+
+Today’s Focus:
+Spam detection / sentiment classifier.
+
+What I did:
+
+Added classification head
+
+Trained on labeled dataset
+
+Evaluated accuracy + metrics
+
+Win: Fine-tuned model works!
+Struggle: Dataset cleaning.
+
+Next: Prepare instruction-tuning dataset.
+
+📌 Day 12 — Instruction Fine-Tuning Part 1 (Videos 39–40)
+
+Today’s Focus:
+Build instruction-following dataset.
+
+What I did:
+
+Built Alpaca-style JSON dataset
+
+Added prompt→response formatting
+
+Validated sample entries
+
+Win: Dataset is clean and usable.
+Struggle: Formatting consistency.
+
+Next: Final training.
+
+📌 Day 13 — Instruction Fine-Tuning Part 2 (Videos 41–43)
+
+Today’s Focus:
+Final instruction tuning run.
+
+What I did:
+
+Ran training
+
+Evaluated on prompts
+
+Fixed alignment issues
+
+Win: Model follows instructions!
+Struggle: Training stability.
+
+Next: Final polish & wrap-up.
+
+📌 Day 14 — Final Polish + Documentation
+
+Today’s Focus:
+Wrap up the whole project.
+
+What I did:
+
+Cleaned scripts
+
+Created a simple inference interface
+
+Wrote summary + architecture diagram
+
+Win: End-to-end LLM built from scratch.
+Struggle: None — final day celebrations 😄
+
+Next: Share learnings + final demo.

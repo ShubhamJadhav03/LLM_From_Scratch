@@ -1,0 +1,75 @@
+This is an aggressive timeline, but definitely achievable if you treat it like a full-time bootcamp.
+
+To finish this 43-video course in 14 days, you will need to commit roughly 4 to 6 hours per day.
+
+Here is your 2-Week "LLM Bootcamp" Schedule.
+
+Week 1: The Architecture (The Hardest Part)
+Your goal this week is to build the untrained "brain" of the model.
+
+Day 1: Data Preparation (Videos 1-5)
+
+Focus: Tokenization, sliding windows, and creating input/target pairs (torch.utils.data.DataLoader).
+
+Goal: Can you feed text into a script and get batches of token IDs out?
+
+Day 2: Embeddings & Positional Encoding (Videos 6-9)
+
+Focus: Turning token IDs into vectors. Understanding why "dog bites man" is different from "man bites dog" (position matters).
+
+Day 3: Attention Mechanism Part 1 (Videos 10-13)
+
+Focus: Self-Attention. This is the most important concept in modern AI.
+
+Mental Check: Do not rush this. If you don't understand Query, Key, and Value, the rest won't make sense.
+
+Day 4: Attention Mechanism Part 2 (Videos 14-17)
+
+Focus: Causal Attention (masking future words) and Multi-Head Attention.
+
+Goal: Code the MultiHeadAttention class in PyTorch.
+
+Day 5: Building the Transformer Block (Videos 18-21)
+
+Focus: Layer Normalization, Feed Forward Networks, and GELU activation. Assemble the blocks.
+
+Day 6: The Full GPT Model (Videos 22-25)
+
+Focus: Connecting the blocks with skip connections (residuals). Finalizing the GPTModel class.
+
+Milestone: You should have a model that can take input and produce (random) output without crashing.
+
+Day 7: Buffer / Debugging Day
+
+Focus: Fix any shape errors. Review the math. Rest your brain briefly.
+
+Week 2: Training & Fine-Tuning (The Fun Part)
+Your goal this week is to make the model actually smart.
+
+Day 8: The Pre-Training Loop (Videos 26-29)
+
+Focus: Writing the training function, calculating Cross-Entropy Loss, and backpropagation.
+
+Day 9: Text Generation Strategies (Videos 30-32)
+
+Focus: How to sample text. Temperature, Top-k, Top-p sampling.
+
+Day 10: Loading Pre-trained Weights (Videos 33-35)
+
+Focus: Instead of spending $1M to train from scratch, load OpenAI’s GPT-2 weights into your architecture.
+
+Day 11: Fine-Tuning for Classification (Videos 36-38)
+
+Focus: Adapting the model to detect spam or classify sentiment.
+
+Day 12: Instruction Fine-Tuning Part 1 (Videos 39-40)
+
+Focus: Preparing dataset (Alpaca style) to make the model follow commands.
+
+Day 13: Instruction Fine-Tuning Part 2 (Videos 41-43)
+
+Focus: The final training run. Evaluating the chatbot.
+
+Day 14: Final Project Polish
+
+Focus: Wrap it in a simple script or notebook. Document what you learned.
